@@ -8,3 +8,4 @@ redirect_from:
   - /about.html
 ---
 * [Quantum Computing](https://pranayrk.github.io/quantum_computing) | [Quantum Computing Deck](https://pranayrk.github.io/quantum_computing_deck/)
+* [Statistics Notes](https://pranayrk.github.io/statistics_notes/output/statistics_notes.pdf)
