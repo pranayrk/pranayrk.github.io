@@ -7,6 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-* [Year 5](https://pranayrk.github.io/quantum_computing)
-* [Year 10](https://pranayrk.github.io/statistics_notes/output/statistics_notes.pdf)
-* [Year 11](https://pranayrk.github.io/topology_notes/output/topology_notes.pdf)
+* [Year 5](https://pranayrk.github.io/Y5)
+* [Year 10](https://pranayrk.github.io/Y10)
+* [Year 11](https://pranayrk.github.io/Y11)
