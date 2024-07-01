@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Pranay Raja Krishnan"
 title_separator          : "-"
 name                     : &name "Pranay Raja Krishnan"
-description              : &description "Masters student at LNMIIT"
+description              : &description "Teacher at NISA"
 url                      : https://pranayrk.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "pranayrk/pranayrk.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Pranay Raja Krishnan"
   avatar           : "profile.png"
-  bio              : "Masters Student at LNMIIT"
-  location         : "Jaipur"
+  bio              : "Teacher at NISA"
+  location         : "Naypyidaw"
   employer         :
   pubmed           : 
   googlescholar    :
