@@ -1,0 +1,81 @@
+@font-face {
+	font-family: sanskrit;
+	src: url("sanskrit_2003.otf") format("opentype");
+}
+
+.home, .search-container {
+	position: fixed;
+	top: 4%;
+	font: inherit;
+	font-size: 1.5rem;
+	z-index: 4;
+}
+
+.home {
+	left: 4%;
+}
+
+.search-container{
+	right: 4%;
+}
+
+#search, #submit {
+	height: 2rem;
+	font-size: 1rem;
+	border: 2px solid var(--r-link-color);
+	background-color: var(--r-background-color);
+	color: var(--r-link-color);
+    outline: none;
+}
+
+.reveal {
+	font-size: 34px;
+}
+
+.reveal h1 {
+    font-size: 42px;
+    color: var(--r-link-color);
+}
+
+.reveal h2 {
+	font-size: 40px;
+    color: var(--r-link-color);
+}
+
+.reveal h3 {
+	font-size: 36px;
+    color: var(--r-link-color);
+}
+
+.reveal h4 {
+	font-size: 34px;
+    color: var(--r-link-color);
+}
+
+.reveal h5 {
+	font-size: 30px;
+    color: var(--r-link-color);
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+}
+
+.reveal p {
+	font-size: inherit;
+}
+
+.reveal li {
+	font-size: inherit;
+}
+
+.reveal blockquote {
+	border: 2px solid black;
+	padding: 2%;
+	font-style: italic;
+	font-size: 24px;
+	text-align: left;
+}
+
+.reveal em {
+	text-decoration: underline;
+}
