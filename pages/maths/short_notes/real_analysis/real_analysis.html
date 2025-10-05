@@ -1,0 +1,67 @@
+<section data-markdown data-state="maths">
+    # Real Analysis
+    ### Short Notes
+</section>
+<section>
+    <h3>Axioms of Real Analysis</h3>
+    <ul>
+        <li>$\mathbb{R}$ is an ordered field</li>
+        <li>$\mathbb{R}$ contains $\mathbb{Q}$ as a subfield</li>
+        <li><b>Axiom of Completeness:</b> Every nonempty set of real numbers that is bounded above has a least upper bound.</li>
+    </ul>
+</section>
+<section data-markdown>
+    ### Resources
+    * [Understanding Analysis - Stephen Abbott](https://drive.google.com/file/d/1x-i7O7_l5oe7TKVLHrEQUeRgTg0sUvwU/view?usp=sharing)
+</section>
+<section data-markdown>
+    # Problems
+</section>
+<section data-markdown>
+    # Definitions
+</section>
+<section>
+    <h3>Function</h3>
+    Given two sets $A$ and $B$, a <b>function</b> from $A$ to $B$ is a rule or mapping that takes each element $x \in A$ and associates it with a single element of $B$. 
+
+    In this case, we write it as $f: A \to B$.
+
+    <p>
+    <a href="" onclick="Javascript:loadSubtitle('pages/maths/short_notes/real_analysis/function.vtt')">play</a>
+    </p>
+</section>
+<section>
+    <h3>Dirichlet Function</h3>
+    $$g(x) = \begin{cases}
+    1 & \text{ if } x \in \mathbb{Q}\\
+    0 & \text{ if } x \notin \mathbb{Q}
+    \end{cases}$$
+</section>
+<section>
+    <h3>Triangle Inequality</h3>
+    The absolute value function satisfies $|a+b|\leq |a| + |b|$ for all choices of $a$ and $b$.
+
+    <p>
+    This inequality is often used as:
+
+    $$
+    \begin{aligned}
+    |a-b| & = |(a-c)+(c-b)| \\
+        & \leq |a-c| + |c-b|
+    \end{aligned}
+    $$
+</section>
+<section>
+    <h3>Bounds</h3>
+    <p>
+    A set $A \subseteq \mathbb{R}$ is bounded above if there exists a number $b \in \mathbb{R}$ such that $a \leq b$ for all $a \in A$. the number $b$ is called an <b>upper bound</b> for $A$
+    </p>
+
+    <p>
+A real number $s$ is the <b>least upper bound</b> for a set $A \subseteq \mathbb{R}$ if it meets the following two criteria:
+<ul>
+    <li>$s$ is an upper bound for $A$</li>
+    <li>if $b$ is any upper bound for $A$, then $s \le b$</li>
+    <ul>
+    </p>
+</section>

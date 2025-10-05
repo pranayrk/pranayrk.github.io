@@ -9,6 +9,7 @@ function loadReveal() {
         hash: true,
         plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealSubreader],
         katex: {
+            fleqn: true,
             local: "bin/plugin/math/node_modules/katex"
         },
         subreader: {
@@ -195,4 +196,8 @@ function loadCSS(state) {
 
 Reveal.addEventListener('dharma', function() {
     loadCSS('dharma');
+}, false );
+
+Reveal.addEventListener('maths', function() {
+    loadCSS('maths');
 }, false );

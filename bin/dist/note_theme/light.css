@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'Inter';
+    src: url('./fonts/inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 600; 
+    font-style: bold;
+}
+
+@font-face {
     font-family: 'Garamond';
     src: url('./fonts/eb_garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
 }
@@ -67,6 +74,10 @@
 .reveal .slides section > section {
     line-height: 1.3;
     font-weight: inherit;
+}
+
+.reveal .slides {
+    text-align: left;
 }
 
 /*********************************************
