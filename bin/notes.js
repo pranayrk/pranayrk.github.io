@@ -1,4 +1,4 @@
-const HOME = "https://pranayrk.github.io/notes/";
+const HOME = "/";
 const NOTES = HOME + "notes/";
 
 function loadReveal() {
@@ -7,14 +7,23 @@ function loadReveal() {
         height: 760,
         margin: 0.04,
         hash: true,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealSubreader],
+        katex: {
+            local: "bin/plugin/math/node_modules/katex"
+        },
+        subreader: {
+            dir: "bin/plugin"
+        }
     });
+
 }
 
 function load(content) {
     Reveal.destroy();
-    slides = document.getElementsByClassName("slides")[0];
+
+    let slides = document.getElementsByClassName("slides")[0];
     slides.innerHTML = content;
+
     loadReveal();
     Reveal.slide(0);
 }
@@ -103,6 +112,8 @@ function goToCode(code) {
         return;
     }
 
+    code = code.toLowerCase(); 
+
     let i = 0;
     for (; i < code.length && (code[i] < '0' || code[i] > '9'); i++);
     let dir = code.substring(0,i);
@@ -178,3 +189,10 @@ function attachLinkEvent() {
     });
 }
 
+function loadCSS(state) {
+    document.getElementById('state').setAttribute('href','bin/dist/note_theme/' + state + ".css");
+}
+
+Reveal.addEventListener('dharma', function() {
+    loadCSS('dharma');
+}, false );

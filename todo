@@ -1,0 +1,1 @@
+1. MINOR: Everytime reveal is loaded, it adds more events to the reveal element. This results in many slidechange events and slidetransitionend events being triggered per slide change, which calls multiple subtitles

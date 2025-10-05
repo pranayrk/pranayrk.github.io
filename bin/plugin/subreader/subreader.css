@@ -1,0 +1,16 @@
+#subtitle {
+    position: fixed;
+    bottom: 10%;
+    height: 5%;
+    width:100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+}
+
+#submedia {
+    visibility: hidden;
+    position: fixed;
+    bottom: 0px;
+    pointer-events: none;
+}

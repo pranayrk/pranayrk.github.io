@@ -1,0 +1,14 @@
+@font-face {
+	font-family: Sanskrit;
+	src: url("fonts/sanskrit_2003.otf") format("opentype");
+}
+
+:root {
+    --r-background-color: black;
+    --r-main-font: Sanskrit;
+    --r-main-color: white;
+    --r-heading-font: Sanskrit;
+    --r-heading-font-weight: 400;
+    --r-heading-color: white;
+    --r-link-color: white;
+}

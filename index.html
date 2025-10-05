@@ -8,32 +8,42 @@
 
 		<link rel="stylesheet" href="bin/dist/reset.css">
 		<link rel="stylesheet" href="bin/dist/reveal.css">
-		<link rel="stylesheet" href="bin/dist/theme/white.css">
+		<link id="theme" rel="stylesheet" href="bin/dist/note_theme/light.css">
+        <link id="state" rel="stylesheet">
 		<link rel="stylesheet" href="bin/plugin/highlight/monokai.css"> 
-        <link rel="stylesheet" href="bin/css/reveal_extra.css">
+		<link rel="stylesheet" href="bin/plugin/subreader/subreader.css"> 
+        <link rel="stylesheet" href="bin/dist/note_theme/note.css">
 
         <script src="bin/dist/reveal.js"></script>
 		<script src="bin/plugin/math/math.js"></script>
         <script src="bin/plugin/notes/notes.js"></script>
         <script src="bin/plugin/markdown/markdown.js"></script>
         <script src="bin/plugin/highlight/highlight.js"></script>
+        <script src="bin/plugin/subreader/plugin.js"></script>
 		<script src="bin/notes.js"></script>
     </head>
     <body>
+
+        <div class="home"><a href="/" onclick="JavaScript:goToCode()"><h2>&#8962;</h2></a></div>
+            <form class="search-bar" action="JavaScript:goToCode(search.value)">
+                <input type="text" placeholder="" name="search" id="search" pattern=".*\S.*">
+                <button type="submit" class="search-btn"><div style="-webkit-transform: rotate(45deg); 
+                              -moz-transform: rotate(45deg); 
+                              -o-transform: rotate(45deg);
+                              transform: rotate(45deg);">
+                        <a>
+                            &#9906;
+                        </a>
+                    </div></button>
+            </form>
+
         <div class="reveal">
             <div class="slides">
-                <section data-markdown>
-                    ### Pranay Raja Krishnan
+                <section>
+                    <h1>Notes</h1>
+                    <h2><em>Pranay</em>&nbsp; Raja Krishnan</h2>
                 </section>
             </div>
-            <div class="home"><a href="https://pranayrk.github.io/notes/">home</a></div>
-            <div class="search-container">
-                <form action="JavaScript:goToCode(search.value)">
-                    <input type="text" placeholder="go to note" name="search" id="search">
-                    <button type="submit" id="submit">submit</button>
-                </form>
-            </div>
-
         </div>
         <script>
             loadReveal();
