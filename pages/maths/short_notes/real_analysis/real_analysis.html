@@ -2,6 +2,10 @@
     # Real Analysis
     ### Short Notes
 </section>
+<section data-markdown>
+    ### Resources
+    * [Understanding Analysis - Stephen Abbott](https://drive.google.com/file/d/1x-i7O7_l5oe7TKVLHrEQUeRgTg0sUvwU/view?usp=sharing)
+</section>
 <section>
     <h3>Axioms of Real Analysis</h3>
     <ul>
@@ -9,22 +13,85 @@
         <li>$\mathbb{R}$ contains $\mathbb{Q}$ as a subfield</li>
         <li><b>Axiom of Completeness:</b> Every nonempty set of real numbers that is bounded above has a least upper bound.</li>
     </ul>
+    <p>
+    <a style="margin-top: 2rem" href="" onclick="Javascript:loadSubtitle('pages/maths/short_notes/real_analysis/completeness.vtt')">play</a>
+    </p>
+</section>
+<section>
+    <h3>Nested Interval Property</h3>
+    <p>
+    For each $n \in \mathbb{N}$, assume we are given a closed interval $$I_n = [a_n, b_n] = \{x \in \mathbb{R}: a_n \leq x \leq b_n \}$$ 
+    </p>
+
+    <p>
+    Assume also, that each $I_n$ contains $I_{n+1}$. Then the resulting sequence of closed intervals $$I_1 \supseteq I_2 \supseteq I_3 \supseteq ...$$
+    has a non-empty intersection, i.e. $\cap_{n=1}^\infty I_n \neq \phi$
+    </p>
+
+</section>
+<section>
+<h3>Archimedean Property</h3>
+<ul>
+<li>Given any number $x \in \mathbb{R}$, there exists an $n \in \mathbb{N}$ satisfying $n > x$</li>
+<li>Given any real number $y > 0$, there exists an $n \in \mathbb{N}$ satisfying $\frac{1}{n} < y$</li>
+
+</ul>
+
+    <h3 style="margin-top:3rem">Density of $\mathbb{Q}$ in $\mathbb{R}$</h3>
+    For every two real numbers $a$ and $b$ with $a < b$, there exists a rational number r satisfying $a < r < b$
+</section>
+<section>
+    <h3>Size of $\mathbb{Q}$ and $\mathbb{R}$</h3>
+    <p>
+    <ul>
+        <li>The set $\mathbb{Q}$ is countable</li>
+        <li>The set $\mathbb{R}$ is uncountable</li>
+    </ul>
+    </p>
+    <p style="margin: 3rem">
+    <h3>Cantor's Theorem</h3>
+    Given any set $A$, there does not exist a function $f: A \to P(A)$ that is onto.
+    </p>
+
+<p>
+    <a style="margin-top: 2rem" href="" onclick="Javascript:loadSubtitle('pages/maths/short_notes/real_analysis/countability.vtt')">play</a>
+    </p>
+
+
 </section>
 <section data-markdown>
-    ### Resources
-    * [Understanding Analysis - Stephen Abbott](https://drive.google.com/file/d/1x-i7O7_l5oe7TKVLHrEQUeRgTg0sUvwU/view?usp=sharing)
+    # Useful Results
 </section>
-<section data-markdown>
-    # Problems
+<section>
+    <p>If $A \subseteq B$ and $B$ is countable, then $A$ is either countable, finite or empty</p>
+    <p style="margin-top: 4rem">
+    <ul>
+        <li>If $A_1, A_2, ..., A_m$ are each countable sets, then the finite union $A_1 \cup A_2 \cup ... \cup A_m$ is countable.</li>
+        <li>
+            If $A_n$ is a countable set for each $n \in \mathbb{N}$, then $\cup_{n=1}^\infty A_n$ is countable.
+        </li>
+    </ul>
+    </p>
 </section>
 <section data-markdown>
     # Definitions
 </section>
 <section>
     <h3>Function</h3>
+    <p>
     Given two sets $A$ and $B$, a <b>function</b> from $A$ to $B$ is a rule or mapping that takes each element $x \in A$ and associates it with a single element of $B$. 
 
     In this case, we write it as $f: A \to B$.
+    </p>
+
+    <p style="margin-top: 3rem">
+    A function $f: A \to B$ is a <b>one-one</b> function if $a_1 \neq a_2$ in $A$ implies that $f(a_1) \neq f(a_2)$ in $B$.
+    </p>
+    
+    <p>
+    A function $f: A \to B$ is <b>onto</b> if given any $b \in B$, it is possible to find an element in $a \in A$ for which $f(a) = b$
+    </p>
+
 
     <p>
     <a href="" onclick="Javascript:loadSubtitle('pages/maths/short_notes/real_analysis/function.vtt')">play</a>
@@ -47,21 +114,46 @@
     $$
     \begin{aligned}
     |a-b| & = |(a-c)+(c-b)| \\
-        & \leq |a-c| + |c-b|
+    & \leq |a-c| + |c-b|
     \end{aligned}
     $$
 </section>
 <section>
-    <h3>Bounds</h3>
-    <p>
-    A set $A \subseteq \mathbb{R}$ is bounded above if there exists a number $b \in \mathbb{R}$ such that $a \leq b$ for all $a \in A$. the number $b$ is called an <b>upper bound</b> for $A$
-    </p>
+    <h3>Least Upper Bound</h3>
+    <!--
+        <p>
+        A set $A \subseteq \mathbb{R}$ is bounded above if there exists a number $b \in \mathbb{R}$ such that $a \leq b$ for all $a \in A$. the number $b$ is called an <b>upper bound</b> for $A$
+        </p>
+    -->
 
     <p>
-A real number $s$ is the <b>least upper bound</b> for a set $A \subseteq \mathbb{R}$ if it meets the following two criteria:
-<ul>
-    <li>$s$ is an upper bound for $A$</li>
-    <li>if $b$ is any upper bound for $A$, then $s \le b$</li>
+    A real number $s$ is the <b>least upper bound</b> for a set $A \subseteq \mathbb{R}$ if it meets the following two criteria:
     <ul>
+        <li>$s$ is an upper bound for $A$</li>
+        <li>if $b$ is any upper bound for $A$, then $s \le b$</li>
+        </ul>
+    </p>
+
+    <h6>OR</h6>
+
+    <p>
+    A real number $s$ is the <b>least upper bound</b> for a set $A \subseteq \mathbb{R}$:
+    <ul>
+        <li>if $s$ is an upper bound for $A$</li>
+        <li>iff for every choice of $\epsilon > 0$, there exists an element $a\in A$ satisfying $s-\epsilon < a$</li>
+        </ul>
     </p>
 </section>
+<section>
+    <p>
+    Two sets have the same <b>cardinality</b> if there exists $f: A \to B$ that is one-one and onto. 
+
+    In this case, we write $A ~ B$
+    </p>
+
+    <p style="margin-top: 3rem">
+    A set $A$ is <b>countable</b> if $\mathbb{N} ~ A$. An infinite set that is not countable is called <b>uncountable</b>
+    </p>
+
+</section>
+

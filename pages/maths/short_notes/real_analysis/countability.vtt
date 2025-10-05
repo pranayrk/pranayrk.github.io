@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:10.000
+Cantor, with his work on infinite sets, made precise the idea that the irrational numbers far outnumber the rational numbers.
+
+00:00:12.000 --> 00:00:22.000
+Cantor initially published his discovery that the real numbers are uncountable in 1874, but in 1891 he offered another proof using decimal numbers that is startling in its simplicity. 
+
+
+00:00:24.000 --> 00:00:34.000
+In this proof, we would first need to show that the open interval (0,1) is uncountable, and then show that the real numbers are uncountable iff (0,1) is uncountable.
+
+
+00:00:36.000 --> 00:00:46.000
+Having established that the rational numbers were countable, and that the real numbers were uncountable, Cantor considered whether there were infinities "above" that of the real numbers. 
+
+
+00:00:50.000 --> 00:01:00.000
+Cantor's theorem establishes a hierarchy of infinite sets that continues well beyond the continuum of the real numbers.
