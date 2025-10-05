@@ -1,5 +1,5 @@
 const HOME = "/";
-const NOTES = HOME + "notes/";
+const NOTES = HOME + "pages/";
 
 function loadReveal() {
     Reveal.initialize({
