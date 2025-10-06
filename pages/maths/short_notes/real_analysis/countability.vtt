@@ -17,3 +17,27 @@ Having established that the rational numbers were countable, and that the real n
 
 00:00:50.000 --> 00:01:00.000
 Cantor's theorem establishes a hierarchy of infinite sets that continues well beyond the continuum of the real numbers.
+
+
+00:01:02.000 --> 00:01:12.000
+Cardinality of a set is an equivalence relation. The natural numbers, the integers and the rational numbers all appear in the same equivalence class.
+
+
+00:01:14.000 --> 00:01:24.000
+Cantor's theorem states that for each set A, card A < card P(A).
+This leads to the implication that there can be no "largest" set.
+
+
+00:01:26.000 --> 00:01:36.000
+Cantor's "continuum hypothesis" proposes that the cardinality of the real numbers is the immediate successor of the cardinality of the rationals, i.e. there is no set with a cardinality in between them.
+
+
+00:01:38.000 --> 00:01:48.000
+The power set of the natural numbers has cardinality equal to the real numbers.
+
+
+00:01:50.000 --> 00:02:00.000
+Kurt Godel showed that using the agreed upon axioms of set theory, there was no way to disprove the continuum hypothesis. Paul Cohen later showed that there was no way to prove it either. 
+
+00:02:02.000 --> 00:02:12.000
+This means that the continuum hypothesis can be accepted or rejected and no logical contradictions will arise.

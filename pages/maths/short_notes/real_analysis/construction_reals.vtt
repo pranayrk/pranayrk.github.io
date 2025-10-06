@@ -1,0 +1,24 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:10.000
+Dedekind's construction of the real numbers is useful because the verification of completeness is done in terms of upper bounds.
+
+
+00:00:12.000 --> 00:00:22.000
+The real numbers constructed in this way are not strictly numbers, but sets of rational numbers. To make this resemble a number system, we must further impose an algebraic structure on it.
+
+
+00:00:24.000 --> 00:00:34.000
+We can verify that the real numbers constructed in this way satisfy field and order properties by defining the operations of addition and multiplication and ordering in terms of the cuts.
+
+
+00:00:36.000 --> 00:00:46.000
+An earlier approach by Cantor to construct the real numbers involves characterising completeness with the assertion that "Cauchy sequences converge"
+
+
+00:00:48.000 --> 00:00:58.000
+Given a Cauchy sequence of rational numbers, we can see that it converges, just not in the rational numbers. Cantor's idea was to define a real number to be the entire Cauchy sequence.
+
+
+00:01:00.000 --> 00:01:10.000
+The fact that there can be two Cauchy sequences that converge to the same value can be addressed by defining a real number to be the equivalence class of Cauchy sequences which converge to the same value.
